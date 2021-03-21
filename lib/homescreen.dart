@@ -37,7 +37,7 @@ class _HomeScreenState extends State<HomeScreen> {
         backgroundColor: kbackgroundcolor,
         bottomNavigationBar: CurvedNavigationBar(
           items: [
-            Icon(Icons.home, color: kprimary),
+            Icon(Icons.home, color: kprimarylight),
             Icon(Icons.restaurant, color: kprimary),
             Icon(Icons.favorite, color: kprimary),
             Icon(Icons.person, color: kprimary),
