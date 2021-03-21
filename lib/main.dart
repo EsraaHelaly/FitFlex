@@ -11,10 +11,11 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      theme: ThemeData(fontFamily: 'Amiri'),
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
       // theme: ThemeData(canvasColor: new Color(0xffE8E7DB)),
-      home: MyHomePage(),
+      home: SplashScreen(),
     );
   }
 }
