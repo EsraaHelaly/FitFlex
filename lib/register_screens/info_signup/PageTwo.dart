@@ -1,5 +1,8 @@
 import 'package:fitflex/models/SizeConfig.dart';
+import 'package:fitflex/register_screens/info_signup/PageThree.dart';
 import 'package:flutter/material.dart';
+
+import '../../constants.dart';
 
 class PageTwo extends StatefulWidget {
   @override
@@ -8,17 +11,17 @@ class PageTwo extends StatefulWidget {
 
 class _PageTwoState extends State<PageTwo> {
   String levelText = "";
-  Color container1 = Color(0xFF404E5C);
-  Color container2 = Color(0xFF404E5C);
-  Color container3 = Color(0xFF404E5C);
-  Color container4 = Color(0xFF404E5C);
-  Color container5 = Color(0xFF404E5C);
-  Color container6 = Color(0xFF404E5C);
+  Color container1 = ktextcolor;
+  Color container2 = ktextcolor;
+  Color container3 = ktextcolor;
+  Color container4 = ktextcolor;
+  Color container5 = ktextcolor;
+  Color container6 = ktextcolor;
   @override
   Widget build(BuildContext context) {
     SizeConfig().init(context);
-    return  Scaffold(
-        backgroundColor: Color(0xFFE7E7DB),
+    return Scaffold(
+        backgroundColor: kbackgroundcolor,
         body: Padding(
           padding: EdgeInsets.symmetric(
             horizontal: SizeConfig.safeBlockHorizontal * 5,
@@ -27,24 +30,15 @@ class _PageTwoState extends State<PageTwo> {
           child: Column(
             children: [
               Center(
-                child: Text("CHOOSE YOUR FITNESS LEVEL",
-                    style: TextStyle(
-                        color: Color(0xFF393939),
-                        fontSize: 20,
-                        fontWeight: FontWeight.bold)),
+                child:
+                    Text("CHOOSE YOUR FITNESS LEVEL", style: headertextstyle),
               ),
               Padding(
                   padding:
                       EdgeInsets.only(top: SizeConfig.safeBlockVertical * 3.5)),
               Center(
-                  child: Text(
-                "Choose the discription that fit you most",
-                textAlign: TextAlign.center,
-                style: TextStyle(
-                  color: Color(0xFF5E6EA4),
-                  fontSize: 15,
-                ),
-              )),
+                  child: Text("Choose the discription that fit you most",
+                      textAlign: TextAlign.center, style: normaltext)),
               Padding(
                   padding: EdgeInsets.only(
                       top: SizeConfig.safeBlockVertical * 3,
@@ -161,13 +155,34 @@ class _PageTwoState extends State<PageTwo> {
               Center(
                   child: Text(levelText,
                       style: TextStyle(
-                        color: Color(0xFF5767A3),
+                        color: kprimary,
                         fontSize: 17,
                       ))),
+              Center(
+                child: ElevatedButton(
+                  child: Text(
+                    "Next",
+                  ),
+                  style: ElevatedButton.styleFrom(
+                    primary: kprimarylight,
+                    textStyle:
+                        TextStyle(color: Color(0xFFFFFFFF), fontSize: 20),
+                    padding:
+                        EdgeInsets.symmetric(horizontal: 125, vertical: 12),
+                    shape: new RoundedRectangleBorder(
+                      borderRadius: new BorderRadius.circular(30.0),
+                    ),
+                  ),
+                  onPressed: () {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) {
+                      return PageThree();
+                    }));
+                  },
+                ),
+              )
             ],
           ),
-        ),
-      
-    );
+        ));
   }
 }

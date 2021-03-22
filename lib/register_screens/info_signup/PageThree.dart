@@ -1,5 +1,8 @@
+import 'package:fitflex/homescreen.dart';
 import 'package:fitflex/models/SizeConfig.dart';
 import 'package:flutter/material.dart';
+
+import '../../constants.dart';
 
 class PageThree extends StatefulWidget {
   @override
@@ -37,10 +40,7 @@ class _PageThreeState extends State<PageThree> {
             Center(
               child: Text(
                 "LET'S GO",
-                style: TextStyle(
-                    color: Color(0xFF393939),
-                    fontSize: 20,
-                    fontWeight: FontWeight.bold),
+                style: headertextstyle,
               ),
             ),
             Padding(
@@ -49,10 +49,7 @@ class _PageThreeState extends State<PageThree> {
             Text(
               "let us know you better to provide more trageted support for you",
               textAlign: TextAlign.center,
-              style: TextStyle(
-                color: Color(0xFF5E6EA4),
-                fontSize: 15,
-              ),
+              style: normaltext,
             ),
             Padding(padding: EdgeInsets.only(top: 14, bottom: 83)),
             Row(
@@ -61,19 +58,19 @@ class _PageThreeState extends State<PageThree> {
                   children: [
                     Text("Date Of Brith",
                         style: TextStyle(
-                          color: Color(0xFF5767A3),
+                          color: kprimary,
                           fontSize: 18,
                         )),
                     Padding(padding: EdgeInsets.only(bottom: 27)),
                     Text("Weight",
                         style: TextStyle(
-                          color: Color(0xFF5767A3),
+                          color: kprimary,
                           fontSize: 18,
                         )),
                     Padding(padding: EdgeInsets.only(bottom: 27)),
                     Text("Height",
                         style: TextStyle(
-                          color: Color(0xFF5767A3),
+                          color: kprimary,
                           fontSize: 18,
                         )),
                   ],
@@ -91,13 +88,13 @@ class _PageThreeState extends State<PageThree> {
                     Padding(padding: EdgeInsets.only(bottom: 27)),
                     Text("no",
                         style: TextStyle(
-                          color: Color(0xFF5767A3),
+                          color: kprimary,
                           fontSize: 18,
                         )),
                     Padding(padding: EdgeInsets.only(bottom: 27)),
                     Text("no",
                         style: TextStyle(
-                          color: Color(0xFF5767A3),
+                          color: kprimary,
                           fontSize: 18,
                         ))
 
@@ -118,6 +115,26 @@ class _PageThreeState extends State<PageThree> {
                 )
               ],
             ),
+            Center(
+              child: ElevatedButton(
+                child: Text(
+                  "Next",
+                ),
+                style: ElevatedButton.styleFrom(
+                  primary: kprimarylight,
+                  textStyle: TextStyle(color: Color(0xFFFFFFFF), fontSize: 20),
+                  padding: EdgeInsets.symmetric(horizontal: 125, vertical: 12),
+                  shape: new RoundedRectangleBorder(
+                    borderRadius: new BorderRadius.circular(30.0),
+                  ),
+                ),
+                onPressed: () {
+                  Navigator.push(context, MaterialPageRoute(builder: (context) {
+                    return HomeScreen();
+                  }));
+                },
+              ),
+            )
           ],
         ),
       ),

@@ -60,39 +60,39 @@ class _PageViewInfoState extends State<PageViewInfo> {
             ],
           ),
 
-          Column(
-            //next button
-            mainAxisAlignment: MainAxisAlignment.end,
-            children: [
-              Padding(
-                padding: EdgeInsets.only(
-                  bottom: SizeConfig.safeBlockHorizontal * 8,
-                ),
-                child: Center(
-                  child: ElevatedButton(
-                    child: Text(
-                      "Next",
-                    ),
-                    style: ElevatedButton.styleFrom(
-                      primary: Color(0xFF91B3D9),
-                      textStyle:
-                          TextStyle(color: Color(0xFFFFFFFF), fontSize: 20),
-                      padding:
-                          EdgeInsets.symmetric(horizontal: 125, vertical: 12),
-                      shape: new RoundedRectangleBorder(
-                        borderRadius: new BorderRadius.circular(30.0),
-                      ),
-                    ),
-                    onPressed: () {
-                      _pageController.nextPage(
-                          duration: Duration(milliseconds: 300),
-                          curve: Curves.ease);
-                    },
-                  ),
-                ),
-              ),
-            ],
-          ),
+          // Column(
+          //   //next button
+          //   mainAxisAlignment: MainAxisAlignment.end,
+          //   children: [
+          //     Padding(
+          //       padding: EdgeInsets.only(
+          //         bottom: SizeConfig.safeBlockHorizontal * 8,
+          //       ),
+          //       child: Center(
+          //         child: ElevatedButton(
+          //           child: Text(
+          //             "Next",
+          //           ),
+          //           style: ElevatedButton.styleFrom(
+          //             primary: Color(0xFF91B3D9),
+          //             textStyle:
+          //                 TextStyle(color: Color(0xFFFFFFFF), fontSize: 20),
+          //             padding:
+          //                 EdgeInsets.symmetric(horizontal: 125, vertical: 12),
+          //             shape: new RoundedRectangleBorder(
+          //               borderRadius: new BorderRadius.circular(30.0),
+          //             ),
+          //           ),
+          //           onPressed: () {
+          //             _pageController.nextPage(
+          //                 duration: Duration(milliseconds: 300),
+          //                 curve: Curves.ease);
+          //           },
+          //         ),
+          //       ),
+          //     ),
+          //   ],
+          // ),
         ]),
       ),
     );
