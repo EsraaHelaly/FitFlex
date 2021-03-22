@@ -3,6 +3,7 @@ import 'package:fitflex/componants/rounded_input_field.dart';
 import 'package:fitflex/componants/rounded_password_field.dart';
 import 'package:fitflex/componants/roundedbutton.dart';
 import 'package:fitflex/constants.dart';
+import 'package:fitflex/register_screens/info_signup/PageViewInfo.dart';
 import 'package:fitflex/register_screens/login.dart';
 import 'package:flutter/material.dart';
 
@@ -93,7 +94,14 @@ class SignUpPage extends StatelessWidget {
                       padding: EdgeInsets.only(left: 30),
                       child: RoundedButton(
                         txt: 'Sign Up',
-                        press: () {},
+                        press: () {
+                          Navigator.pushReplacement(
+                            context,
+                            MaterialPageRoute(builder: (context) {
+                              return PageViewInfo();
+                            }),
+                          );
+                        },
                       ),
                     ),
                     SizedBox(height: 30),
