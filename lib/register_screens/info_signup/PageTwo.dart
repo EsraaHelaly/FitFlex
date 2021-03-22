@@ -7,13 +7,13 @@ class PageTwo extends StatefulWidget {
 }
 
 class _PageTwoState extends State<PageTwo> {
-  String levelText = "helo";
-  Color container1,
-      container2,
-      container3,
-      container4,
-      container5,
-      container6 = Color(0xFF404E5C);
+  String levelText = "";
+  Color container1 = Color(0xFF404E5C);
+  Color container2 = Color(0xFF404E5C);
+  Color container3 = Color(0xFF404E5C);
+  Color container4 = Color(0xFF404E5C);
+  Color container5 = Color(0xFF404E5C);
+  Color container6 = Color(0xFF404E5C);
   @override
   Widget build(BuildContext context) {
     SizeConfig().init(context);
