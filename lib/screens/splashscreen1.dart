@@ -16,7 +16,7 @@ class SplashScreen extends StatelessWidget {
         imageSize: 100,
         imageSrc: "images/yoga.png",
         text: "FITFLEX",
-        textType: TextType.TyperAnimatedText,
+        textType: TextType.ScaleAnimatedText,
         textStyle: TextStyle(
           color: ktextcolor,
           fontSize: 40,
