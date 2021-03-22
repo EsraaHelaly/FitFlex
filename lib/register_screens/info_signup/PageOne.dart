@@ -1,5 +1,5 @@
-import 'package:fitflex/models/SizeConfig.dart';
 import 'package:flutter/material.dart';
+import 'package:fitflex/models/SizeConfig.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 
 class PageOne extends StatefulWidget {
@@ -15,13 +15,13 @@ class _PageOneState extends State<PageOne> {
       backgroundColor: Color(0xFFE7E7DB),
       body: Padding(
         padding: EdgeInsets.symmetric(
-          horizontal: SizeConfig.safeBlockHorizontal * 5,
+          horizontal: SizeConfig.safeBlockHorizontal * 10,
           vertical: SizeConfig.safeBlockVertical * 10,
         ),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            Padding(padding: EdgeInsets.only(top: 88)),
+            // Padding(padding: EdgeInsets.only(top: 88)),
             Center(
               child: Text(
                 "WHAT'S YOUR GENDER?",
@@ -31,13 +31,15 @@ class _PageOneState extends State<PageOne> {
                     fontWeight: FontWeight.bold),
               ),
             ),
-            Padding(padding: EdgeInsets.only(top: 14)),
+            Padding(
+                padding:
+                    EdgeInsets.only(top: SizeConfig.safeBlockVertical * 3.5)),
             Text(
               "We will personalize your workout program based on a few questions.",
               textAlign: TextAlign.center,
               style: TextStyle(
                 color: Color(0xFF5E6EA4),
-                fontSize: 20,
+                fontSize: 15,
               ),
             ),
             Padding(padding: EdgeInsets.only(top: 109)),
