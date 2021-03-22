@@ -20,14 +20,3 @@ const textfitflex = Text(
       color: Color(0xff2F4054), fontSize: 40, fontWeight: FontWeight.bold),
 );
 
-// SplashScreen(
-//         backgroundColor: new Color(0xffE8E7DB),
-//         seconds: 3,
-//         useLoader: false,
-//         title: Text('FITFLEX',
-//             style: TextStyle(
-//                 color: new Color(0xff393939),
-//                 fontSize: 40,
-//                 fontWeight: FontWeight.bold)),
-//         navigateAfterSeconds: SplashScreen2(),
-//       ),

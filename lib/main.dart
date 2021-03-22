@@ -1,4 +1,3 @@
-import 'package:fitflex/register_screens/info_signup/PageViewInfo.dart';
 import 'package:fitflex/screens/splashscreen1.dart';
 import 'package:flutter/material.dart';
 
@@ -15,7 +14,7 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
       // theme: ThemeData(canvasColor: new Color(0xffE8E7DB)),
-      home: PageViewInfo(),
+      home: MyHomePage(),
     );
   }
 }
