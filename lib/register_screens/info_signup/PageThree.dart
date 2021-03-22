@@ -44,8 +44,8 @@ class _PageThreeState extends State<PageThree> {
               ),
             ),
             Padding(
-              padding: EdgeInsets.only(top: SizeConfig.safeBlockVertical * 3.5),
-            ),
+                padding:
+                    EdgeInsets.only(top: SizeConfig.safeBlockVertical * 3.5)),
             Text(
               "let us know you better to provide more trageted support for you",
               textAlign: TextAlign.center,
@@ -86,7 +86,6 @@ class _PageThreeState extends State<PageThree> {
                           )),
                     ),
                     Padding(padding: EdgeInsets.only(bottom: 27)),
-<<<<<<< HEAD
                     Text("no",
                         style: TextStyle(
                           color: kprimary,
@@ -112,9 +111,6 @@ class _PageThreeState extends State<PageThree> {
                     //     //     border: InputBorder.none,
                     //     //     hintText: 'Enter your height'),
                     //     )
-=======
-                 Text('ee')
->>>>>>> 873a1370566f0eac302ee933da41c595312c988b
                   ],
                 )
               ],
