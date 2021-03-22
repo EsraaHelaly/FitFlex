@@ -43,12 +43,14 @@ class _PageThreeState extends State<PageThree> {
                     fontWeight: FontWeight.bold),
               ),
             ),
-            Padding(padding: EdgeInsets.only(top: 14)),
+            Padding(
+                padding:
+                    EdgeInsets.only(top: SizeConfig.safeBlockVertical * 3.5)),
             Text(
               "let us know you better to provide more trageted support for you",
               textAlign: TextAlign.center,
               style: TextStyle(
-                color: Color(0xFF5767A3),
+                color: Color(0xFF5E6EA4),
                 fontSize: 15,
               ),
             ),
@@ -62,13 +64,13 @@ class _PageThreeState extends State<PageThree> {
                           color: Color(0xFF5767A3),
                           fontSize: 18,
                         )),
-                    Padding(padding: EdgeInsets.only(top: 27)),
+                    Padding(padding: EdgeInsets.only(bottom: 27)),
                     Text("Weight",
                         style: TextStyle(
                           color: Color(0xFF5767A3),
                           fontSize: 18,
                         )),
-                    Padding(padding: EdgeInsets.only(top: 27)),
+                    Padding(padding: EdgeInsets.only(bottom: 27)),
                     Text("Height",
                         style: TextStyle(
                           color: Color(0xFF5767A3),
@@ -76,7 +78,7 @@ class _PageThreeState extends State<PageThree> {
                         )),
                   ],
                 ),
-                Padding(padding: EdgeInsets.only(right: 130)),
+                Padding(padding: EdgeInsets.only(right: 115)),
                 Column(
                   children: [
                     TextButton(
@@ -86,29 +88,26 @@ class _PageThreeState extends State<PageThree> {
                             fontSize: 18,
                           )),
                     ),
-                    Padding(padding: EdgeInsets.only(top: 27)),
+                    Padding(padding: EdgeInsets.only(bottom: 27)),
                     Text("no",
                         style: TextStyle(
                           color: Color(0xFF5767A3),
                           fontSize: 18,
                         )),
-                    Padding(padding: EdgeInsets.only(top: 27)),
+                    Padding(padding: EdgeInsets.only(bottom: 27)),
                     Text("no",
                         style: TextStyle(
                           color: Color(0xFF5767A3),
                           fontSize: 18,
                         ))
 
-                    // FittedBox(
-                    //   fit: BoxFit.contain,
-                    //   child: TextField(
+                    // TextField(
                     //       //     keyboardType: TextInputType.number,
                     //       //     decoration: InputDecoration(
                     //       //       border: InputBorder.none,
                     //       //       hintText: 'Enter your weight',
                     //       //     ),
-                    //       ),
-                    // ),
+                    //    ,
                     // TextField(
                     //     // keyboardType: TextInputType.number,
                     //     // decoration: InputDecoration(
@@ -119,23 +118,6 @@ class _PageThreeState extends State<PageThree> {
                 )
               ],
             ),
-            Padding(padding: EdgeInsets.only(top: 150)),
-            Center(
-              child: ElevatedButton(
-                child: Text(
-                  "Next",
-                ),
-                style: ElevatedButton.styleFrom(
-                  primary: Color(0xFF91B3D9),
-                  textStyle: TextStyle(color: Color(0xFFFFFFFF), fontSize: 20),
-                  padding: EdgeInsets.symmetric(horizontal: 125, vertical: 12),
-                  shape: new RoundedRectangleBorder(
-                    borderRadius: new BorderRadius.circular(30.0),
-                  ),
-                ),
-                onPressed: () {},
-              ),
-            )
           ],
         ),
       ),
