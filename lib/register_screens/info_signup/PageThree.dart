@@ -96,14 +96,13 @@ class _PageThreeState extends State<PageThree> {
                         style: TextStyle(
                           color: kprimary,
                           fontSize: 18,
-                        ))
-
+                        )),
                     // TextField(
-                    //       //     keyboardType: TextInputType.number,
-                    //       //     decoration: InputDecoration(
-                    //       //       border: InputBorder.none,
-                    //       //       hintText: 'Enter your weight',
-                    //       //     ),
+                    //   keyboardType: TextInputType.number,
+                    //   decoration: InputDecoration(
+                    //     border: InputBorder.none,
+                    //     hintText: 'Enter your weight',
+                    //   ),
                     //    ,
                     // TextField(
                     //     // keyboardType: TextInputType.number,
@@ -111,6 +110,7 @@ class _PageThreeState extends State<PageThree> {
                     //     //     border: InputBorder.none,
                     //     //     hintText: 'Enter your height'),
                     //     )
+                    // )
                   ],
                 )
               ],

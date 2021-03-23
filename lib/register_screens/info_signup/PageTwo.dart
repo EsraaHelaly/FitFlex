@@ -49,9 +49,11 @@ class _PageTwoState extends State<PageTwo> {
                 children: [
                   InkWell(
                     onTap: () {
-                      levelText =
-                          "I easily ger out of breath while walking up of ht stairs";
-                      container1 = Color(0xFFB9B9B9);
+                      setState(() {
+                        levelText =
+                            "I easily ger out of breath while walking up of ht stairs";
+                        container1 = Color(0xFFB9B9B9);
+                      });
                     },
                     child: Container(
                       width: SizeConfig.safeBlockHorizontal * 10,
@@ -64,10 +66,12 @@ class _PageTwoState extends State<PageTwo> {
                           right: SizeConfig.safeBlockHorizontal * 2)),
                   InkWell(
                     onTap: () {
-                      levelText =
-                          "My heartbeat raise after doning several jummping jacks ";
-                      container1 = Color(0xFFB9B9B9);
-                      container2 = Color(0xFFB9B9B9);
+                      setState(() {
+                        levelText =
+                            "My heartbeat raise after doning several jummping jacks ";
+                        container1 = Color(0xFFB9B9B9);
+                        container2 = Color(0xFFB9B9B9);
+                      });
                     },
                     child: Container(
                       width: SizeConfig.safeBlockHorizontal * 10,
@@ -80,11 +84,13 @@ class _PageTwoState extends State<PageTwo> {
                           right: SizeConfig.safeBlockHorizontal * 2)),
                   InkWell(
                     onTap: () {
-                      levelText =
-                          "Sometimes i do quick workouts to get my body moving ";
-                      container1 = Color(0xFFB9B9B9);
-                      container2 = Color(0xFFB9B9B9);
-                      container3 = Color(0xFFB9B9B9);
+                      setState(() {
+                        levelText =
+                            "Sometimes i do quick workouts to get my body moving ";
+                        container1 = Color(0xFFB9B9B9);
+                        container2 = Color(0xFFB9B9B9);
+                        container3 = Color(0xFFB9B9B9);
+                      });
                     },
                     child: Container(
                       width: SizeConfig.safeBlockHorizontal * 10,
@@ -97,6 +103,7 @@ class _PageTwoState extends State<PageTwo> {
                           right: SizeConfig.safeBlockHorizontal * 2)),
                   InkWell(
                     onTap: () {
+                      setState(() {});
                       levelText =
                           "I exercise regularly at least 2-3 times a week ";
                       container1 = Color(0xFFB9B9B9);
@@ -115,12 +122,14 @@ class _PageTwoState extends State<PageTwo> {
                           right: SizeConfig.safeBlockHorizontal * 2)),
                   InkWell(
                     onTap: () {
-                      levelText = "Fitness is essential part of my life";
-                      container1 = Color(0xFFB9B9B9);
-                      container2 = Color(0xFFB9B9B9);
-                      container3 = Color(0xFFB9B9B9);
-                      container4 = Color(0xFFB9B9B9);
-                      container5 = Color(0xFFB9B9B9);
+                      setState(() {
+                        levelText = "Fitness is essential part of my life";
+                        container1 = Color(0xFFB9B9B9);
+                        container2 = Color(0xFFB9B9B9);
+                        container3 = Color(0xFFB9B9B9);
+                        container4 = Color(0xFFB9B9B9);
+                        container5 = Color(0xFFB9B9B9);
+                      });
                     },
                     child: Container(
                       width: SizeConfig.safeBlockHorizontal * 10,
@@ -133,13 +142,15 @@ class _PageTwoState extends State<PageTwo> {
                           right: SizeConfig.safeBlockHorizontal * 2)),
                   InkWell(
                     onTap: () {
-                      levelText = "Fitness is a piece of cake for me";
-                      container1 = Color(0xFFB9B9B9);
-                      container2 = Color(0xFFB9B9B9);
-                      container3 = Color(0xFFB9B9B9);
-                      container4 = Color(0xFFB9B9B9);
-                      container5 = Color(0xFFB9B9B9);
-                      container6 = Color(0xFFB9B9B9);
+                      setState(() {
+                        levelText = "Fitness is a piece of cake for me";
+                        container1 = Color(0xFFB9B9B9);
+                        container2 = Color(0xFFB9B9B9);
+                        container3 = Color(0xFFB9B9B9);
+                        container4 = Color(0xFFB9B9B9);
+                        container5 = Color(0xFFB9B9B9);
+                        container6 = Color(0xFFB9B9B9);
+                      });
                     },
                     child: Container(
                       width: SizeConfig.safeBlockHorizontal * 10,
