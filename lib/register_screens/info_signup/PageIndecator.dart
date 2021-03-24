@@ -77,9 +77,5 @@ class _PageIndecatorState extends State<PageIndecator> {
                 }));
               }
             }));
-
-    // onclick() {
-    //
-    //}
   }
 }
