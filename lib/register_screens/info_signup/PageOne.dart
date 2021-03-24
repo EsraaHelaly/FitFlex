@@ -4,7 +4,6 @@ import 'package:fitflex/models/SizeConfig.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 
 import '../../constants.dart';
-import 'PageTwo.dart';
 
 class PageOne extends StatefulWidget {
   @override
