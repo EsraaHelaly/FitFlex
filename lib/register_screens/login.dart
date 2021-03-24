@@ -6,6 +6,8 @@ import 'package:fitflex/constants.dart';
 import 'package:fitflex/register_screens/signup.dart';
 import 'package:flutter/material.dart';
 
+import '../homescreen.dart';
+
 class LoginPage extends StatefulWidget {
   LoginPage({Key key}) : super(key: key);
 
@@ -75,8 +77,11 @@ class _LoginPageState extends State<LoginPage> {
                 Padding(
                   padding: EdgeInsets.only(left: 30),
                   child: RoundedButton(
-                    txt: 'Log In',
-                    press: () {},
+                    txt: 'Log In ',
+                    press: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (ctx) => HomeScreen()));
+                    },
                   ),
                 ),
                 SizedBox(height: 30),

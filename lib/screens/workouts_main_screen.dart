@@ -9,6 +9,7 @@ class WorkoutsScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        elevation: 0,
         backgroundColor: kbackgroundcolor,
         shadowColor: kbackgroundcolor,
         leading: InkWell(
