@@ -33,7 +33,7 @@ dependencies:
   esys_flutter_share: ^1.0.2
   splash_screen_view: ^1.0.1
   curved_navigation_bar: ^0.3.7
-  page_indicator: ^0.3.0
+  step_progress_indicator: ^0.2.4+7
 
 
 dev_dependencies:
