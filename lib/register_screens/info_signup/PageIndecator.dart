@@ -60,6 +60,11 @@ class _PageIndecatorState extends State<PageIndecator> {
         _visible = true;
       });
     }
+    if (_selectedpage == 0) {
+      setState(() {
+        _visible = false;
+      });
+    }
     return Visibility(
         visible: _visible,
         child: ElevatedButton(
