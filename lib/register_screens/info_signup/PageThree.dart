@@ -86,6 +86,7 @@ class _PageThreeState extends State<PageThree> {
                           )),
                     ),
                     Padding(padding: EdgeInsets.only(bottom: 27)),
+
                     Text("no",
                         style: TextStyle(
                           color: kprimary,
