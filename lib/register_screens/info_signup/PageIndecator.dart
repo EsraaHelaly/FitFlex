@@ -37,19 +37,19 @@ class _PageIndecatorState extends State<PageIndecator> {
         body: Padding(
             padding: EdgeInsets.symmetric(
               horizontal: SizeConfig.safeBlockHorizontal * 5,
-              vertical: SizeConfig.safeBlockVertical * 6,
+              vertical: SizeConfig.safeBlockVertical * 5,
             ),
             child: Column(children: [
               Row(
                 children: [
                   backbutton(),
-                  SizedBox(width: SizeConfig.safeBlockVertical * 8),
+                  SizedBox(width: SizeConfig.safeBlockVertical * 12),
                   indecator(_selectedpage),
                 ],
               ),
-              SizedBox(height: 33, width: SizeConfig.safeBlockVertical * 100),
+              SizedBox(height: 25, width: SizeConfig.safeBlockVertical * 100),
               pages[_selectedpage],
-              SizedBox(height: 90, width: SizeConfig.safeBlockVertical * 100),
+              SizedBox(height: 50, width: SizeConfig.safeBlockVertical * 100),
               next_button()
             ])));
   }
