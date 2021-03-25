@@ -1,4 +1,4 @@
-import 'package:fitflex/models/Container_methods.dart';
+import 'package:fitflex/models/LevelContainerColors.dart';
 import 'package:fitflex/models/SizeConfig.dart';
 import 'package:flutter/material.dart';
 
@@ -10,9 +10,12 @@ class PageTwo extends StatefulWidget {
 }
 
 class _PageTwoState extends State<PageTwo> {
+  LevelContainerColor _container = new LevelContainerColor(" ", ktextcolor,
+      ktextcolor, ktextcolor, ktextcolor, ktextcolor, ktextcolor);
   @override
   Widget build(BuildContext context) {
     SizeConfig().init(context);
+
     return Column(
       children: [
         Center(
@@ -34,20 +37,20 @@ class _PageTwoState extends State<PageTwo> {
             InkWell(
               onTap: () {
                 setState(() {
-                  levelText =
-                      "I easily get out of breath while walking up of the stairs";
-                  container1 = Color(0xFFB9B9B9);
-                  container2 = ktextcolor;
-                  container3 = ktextcolor;
-                  container4 = ktextcolor;
-                  container5 = ktextcolor;
-                  container6 = ktextcolor;
+                  _container = LevelContainerColor(
+                      " I easily get out of breath while walking up of the stairs",
+                      darkselver,
+                      ktextcolor,
+                      ktextcolor,
+                      ktextcolor,
+                      ktextcolor,
+                      ktextcolor);
                 });
               },
               child: Container(
                 width: SizeConfig.safeBlockHorizontal * 10,
                 height: SizeConfig.safeBlockVertical * 5,
-                color: container1,
+                color: _container.container1,
               ),
             ),
             Padding(
@@ -56,20 +59,20 @@ class _PageTwoState extends State<PageTwo> {
             InkWell(
               onTap: () {
                 setState(() {
-                  levelText =
-                      "My heartbeat raise after doning several jummping jacks ";
-                  container1 = Color(0xFFB9B9B9);
-                  container2 = Color(0xFFB9B9B9);
-                  container3 = ktextcolor;
-                  container4 = ktextcolor;
-                  container5 = ktextcolor;
-                  container6 = ktextcolor;
+                  _container = LevelContainerColor(
+                      "My heartbeat raise after doning several jummping jacks",
+                      darkselver,
+                      darkselver,
+                      ktextcolor,
+                      ktextcolor,
+                      ktextcolor,
+                      ktextcolor);
                 });
               },
               child: Container(
                 width: SizeConfig.safeBlockHorizontal * 10,
                 height: SizeConfig.safeBlockVertical * 8,
-                color: container2,
+                color: _container.container2,
               ),
             ),
             Padding(
@@ -78,20 +81,20 @@ class _PageTwoState extends State<PageTwo> {
             InkWell(
               onTap: () {
                 setState(() {
-                  levelText =
-                      "Sometimes i do quick workouts to get my body moving ";
-                  container1 = Color(0xFFB9B9B9);
-                  container2 = Color(0xFFB9B9B9);
-                  container3 = Color(0xFFB9B9B9);
-                  container4 = ktextcolor;
-                  container5 = ktextcolor;
-                  container6 = ktextcolor;
+                  _container = LevelContainerColor(
+                      "Sometimes i do quick workouts to get my body moving",
+                      darkselver,
+                      darkselver,
+                      darkselver,
+                      ktextcolor,
+                      ktextcolor,
+                      ktextcolor);
                 });
               },
               child: Container(
                 width: SizeConfig.safeBlockHorizontal * 10,
                 height: SizeConfig.safeBlockVertical * 11,
-                color: container3,
+                color: _container.container3,
               ),
             ),
             Padding(
@@ -100,19 +103,20 @@ class _PageTwoState extends State<PageTwo> {
             InkWell(
               onTap: () {
                 setState(() {
-                  levelText = "I exercise regularly at least 2-3 times a week ";
-                  container1 = Color(0xFFB9B9B9);
-                  container2 = Color(0xFFB9B9B9);
-                  container3 = Color(0xFFB9B9B9);
-                  container4 = Color(0xFFB9B9B9);
-                  container5 = ktextcolor;
-                  container6 = ktextcolor;
+                  _container = LevelContainerColor(
+                      " I exercise regularly at least 2-3 times a week",
+                      darkselver,
+                      darkselver,
+                      darkselver,
+                      darkselver,
+                      ktextcolor,
+                      ktextcolor);
                 });
               },
               child: Container(
                 width: SizeConfig.safeBlockHorizontal * 10,
                 height: SizeConfig.safeBlockVertical * 14,
-                color: container4,
+                color: _container.container4,
               ),
             ),
             Padding(
@@ -121,19 +125,20 @@ class _PageTwoState extends State<PageTwo> {
             InkWell(
               onTap: () {
                 setState(() {
-                  levelText = "Fitness is essential part of my life";
-                  container1 = Color(0xFFB9B9B9);
-                  container2 = Color(0xFFB9B9B9);
-                  container3 = Color(0xFFB9B9B9);
-                  container4 = Color(0xFFB9B9B9);
-                  container5 = Color(0xFFB9B9B9);
-                  container6 = ktextcolor;
+                  _container = LevelContainerColor(
+                      "Fitness is essential part of my life",
+                      darkselver,
+                      darkselver,
+                      darkselver,
+                      darkselver,
+                      darkselver,
+                      ktextcolor);
                 });
               },
               child: Container(
                 width: SizeConfig.safeBlockHorizontal * 10,
                 height: SizeConfig.safeBlockVertical * 17,
-                color: container5,
+                color: _container.container5,
               ),
             ),
             Padding(
@@ -142,29 +147,31 @@ class _PageTwoState extends State<PageTwo> {
             InkWell(
               onTap: () {
                 setState(() {
-                  levelText = "Fitness is a piece of cake for me";
-                  container1 = Color(0xFFB9B9B9);
-                  container2 = Color(0xFFB9B9B9);
-                  container3 = Color(0xFFB9B9B9);
-                  container4 = Color(0xFFB9B9B9);
-                  container5 = Color(0xFFB9B9B9);
-                  container6 = Color(0xFFB9B9B9);
+                  _container = LevelContainerColor(
+                      " Fitness is a piece of cake for me",
+                      darkselver,
+                      darkselver,
+                      darkselver,
+                      darkselver,
+                      darkselver,
+                      darkselver);
                 });
               },
               child: Container(
                 width: SizeConfig.safeBlockHorizontal * 10,
                 height: SizeConfig.safeBlockVertical * 20,
-                color: container6,
+                color: _container.container6,
               ),
             )
           ],
         ),
         Container(
-            padding: EdgeInsets.symmetric(
-                horizontal: SizeConfig.safeBlockHorizontal * 6,
-                vertical: SizeConfig.safeBlockVertical * 8),
+            padding: EdgeInsets.only(
+                left: SizeConfig.safeBlockHorizontal * 6,
+                right: SizeConfig.safeBlockHorizontal * 6,
+                top: SizeConfig.safeBlockVertical * 8),
             alignment: Alignment.center,
-            child: Text(levelText,
+            child: Text(_container.levelText,
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   color: kprimary,

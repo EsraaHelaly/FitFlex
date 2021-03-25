@@ -130,16 +130,6 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.3.0"
-<<<<<<< HEAD
-=======
-  page_indicator:
-    dependency: "direct main"
-    description:
-      name: page_indicator
-      url: "https://pub.dartlang.org"
-    source: hosted
-    version: "0.3.0"
->>>>>>> 5351873a82af75ba3f9293eeb23a122d73c7362f
   path:
     dependency: "direct main"
     description:
@@ -229,7 +219,6 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.10.0"
-<<<<<<< HEAD
   step_progress_indicator:
     dependency: "direct main"
     description:
@@ -237,8 +226,6 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "0.2.5+8"
-=======
->>>>>>> 5351873a82af75ba3f9293eeb23a122d73c7362f
   stream_channel:
     dependency: transitive
     description:

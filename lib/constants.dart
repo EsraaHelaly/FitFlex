@@ -4,6 +4,7 @@ const kbackgroundcolor = Color(0xffE8E7DB);
 const kprimary = Color(0xff5767A3);
 const kprimarylight = Color(0xff91B3D9);
 const ktextcolor = Color(0xff2F4054);
+const darkselver = Color(0xFFB9B9B9);
 
 const double width = 342;
 const double height = 54;
@@ -19,4 +20,3 @@ const textfitflex = Text(
   style: TextStyle(
       color: Color(0xff2F4054), fontSize: 40, fontWeight: FontWeight.bold),
 );
-

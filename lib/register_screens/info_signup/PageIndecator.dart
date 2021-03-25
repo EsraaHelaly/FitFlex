@@ -42,6 +42,7 @@ class _PageIndecatorState extends State<PageIndecator> {
               indecator(_selectedpage),
               SizedBox(height: 33, width: SizeConfig.safeBlockVertical * 100),
               pages[_selectedpage],
+              SizedBox(height: 90, width: SizeConfig.safeBlockVertical * 100),
               next_button()
             ])));
   }
