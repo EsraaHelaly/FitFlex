@@ -1,4 +1,3 @@
-import 'package:fitflex/homescreen.dart';
 import 'package:fitflex/models/SizeConfig.dart';
 import 'package:flutter/material.dart';
 
@@ -48,66 +47,23 @@ class _PageThreeState extends State<PageThree> {
           children: [
             Column(
               children: [
-                Column(
-                  children: [
-                    Text("Date Of Brith",
-                        style: TextStyle(
-                          color: kprimary,
-                          fontSize: 18,
-                        )),
-                    Padding(padding: EdgeInsets.only(bottom: 27)),
-                    Text("Weight",
-                        style: TextStyle(
-                          color: kprimary,
-                          fontSize: 18,
-                        )),
-                    Padding(padding: EdgeInsets.only(bottom: 27)),
-                    Text("Height",
-                        style: TextStyle(
-                          color: kprimary,
-                          fontSize: 18,
-                        )),
-                  ],
-                ),
-                Padding(padding: EdgeInsets.only(right: 115)),
-                Column(
-                  children: [
-                    TextButton(
-                      onPressed: () => _selectDate(context),
-                      child: Text('Select date',
-                          style: TextStyle(
-                            fontSize: 18,
-                          )),
-                    ),
-                    Padding(padding: EdgeInsets.only(bottom: 27)),
-
-                    Text("no",
-                        style: TextStyle(
-                          color: kprimary,
-                          fontSize: 18,
-                        )),
-                    Padding(padding: EdgeInsets.only(bottom: 27)),
-                    Text("no",
-                        style: TextStyle(
-                          color: kprimary,
-                          fontSize: 18,
-                        ))
-
-                    // TextField(
-                    //       //     keyboardType: TextInputType.number,
-                    //       //     decoration: InputDecoration(
-                    //       //       border: InputBorder.none,
-                    //       //       hintText: 'Enter your weight',
-                    //       //     ),
-                    //    ,
-                    // TextField(
-                    //     // keyboardType: TextInputType.number,
-                    //     // decoration: InputDecoration(
-                    //     //     border: InputBorder.none,
-                    //     //     hintText: 'Enter your height'),
-                    //     )
-                  ],
-                )
+                Text("Date Of Brith",
+                    style: TextStyle(
+                      color: kprimary,
+                      fontSize: 18,
+                    )),
+                Padding(padding: EdgeInsets.only(bottom: 27)),
+                Text("Weight",
+                    style: TextStyle(
+                      color: kprimary,
+                      fontSize: 18,
+                    )),
+                Padding(padding: EdgeInsets.only(bottom: 27)),
+                Text("Height",
+                    style: TextStyle(
+                      color: kprimary,
+                      fontSize: 18,
+                    )),
               ],
             ),
             Padding(padding: EdgeInsets.only(right: 115)),
@@ -121,6 +77,7 @@ class _PageThreeState extends State<PageThree> {
                       )),
                 ),
                 Padding(padding: EdgeInsets.only(bottom: 27)),
+
                 Text("no",
                     style: TextStyle(
                       color: kprimary,
@@ -131,13 +88,14 @@ class _PageThreeState extends State<PageThree> {
                     style: TextStyle(
                       color: kprimary,
                       fontSize: 18,
-                    )),
+                    ))
+
                 // TextField(
-                //   keyboardType: TextInputType.number,
-                //   decoration: InputDecoration(
-                //     border: InputBorder.none,
-                //     hintText: 'Enter your weight',
-                //   ),
+                //       //     keyboardType: TextInputType.number,
+                //       //     decoration: InputDecoration(
+                //       //       border: InputBorder.none,
+                //       //       hintText: 'Enter your weight',
+                //       //     ),
                 //    ,
                 // TextField(
                 //     // keyboardType: TextInputType.number,
@@ -145,9 +103,8 @@ class _PageThreeState extends State<PageThree> {
                 //     //     border: InputBorder.none,
                 //     //     hintText: 'Enter your height'),
                 //     )
-                // )
               ],
-            )
+            ),
           ],
         ),
       ],

@@ -9,6 +9,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 
 import '../../constants.dart';
+import '../signup.dart';
 
 class PageIndecator extends StatefulWidget {
   int _selectedpage;
@@ -36,10 +37,16 @@ class _PageIndecatorState extends State<PageIndecator> {
         body: Padding(
             padding: EdgeInsets.symmetric(
               horizontal: SizeConfig.safeBlockHorizontal * 5,
-              vertical: SizeConfig.safeBlockVertical * 10,
+              vertical: SizeConfig.safeBlockVertical * 6,
             ),
             child: Column(children: [
-              indecator(_selectedpage),
+              Row(
+                children: [
+                  backbutton(),
+                  SizedBox(width: SizeConfig.safeBlockVertical * 8),
+                  indecator(_selectedpage),
+                ],
+              ),
               SizedBox(height: 33, width: SizeConfig.safeBlockVertical * 100),
               pages[_selectedpage],
               SizedBox(height: 90, width: SizeConfig.safeBlockVertical * 100),
@@ -69,14 +76,34 @@ class _PageIndecatorState extends State<PageIndecator> {
             ),
             onPressed: () {
               if (_selectedpage == 2) {
-                Navigator.push(context, MaterialPageRoute(builder: (context) {
+                Navigator.pushReplacement(context,
+                    MaterialPageRoute(builder: (context) {
                   return HomeScreen();
                 }));
               } else {
-                Navigator.push(context, MaterialPageRoute(builder: (context) {
-                  return PageIndecator(_selectedpage + 1);
-                }));
+                setState(() {
+                  _selectedpage++;
+                });
               }
             }));
+  }
+
+  Widget backbutton() {
+    return IconButton(
+        iconSize: 25,
+        color: kprimary,
+        icon: Icon(Icons.arrow_back),
+        onPressed: () {
+          if (_selectedpage == 0) {
+            Navigator.pushReplacement(context,
+                MaterialPageRoute(builder: (context) {
+              return SignUpPage();
+            }));
+          } else {
+            setState(() {
+              _selectedpage--;
+            });
+          }
+        });
   }
 }
