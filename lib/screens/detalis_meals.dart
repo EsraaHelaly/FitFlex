@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+// ignore: camel_case_types
 class Detalis_Meals extends StatelessWidget {
   // BestSelling model;
   // ProductDetails({this.model, });

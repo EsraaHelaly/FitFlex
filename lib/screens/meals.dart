@@ -4,6 +4,7 @@ import 'package:flutter/widgets.dart';
 
 
 // ignore: camel_case_types
+// ignore: must_be_immutable
 class Meals extends StatelessWidget {
   String name;
   Meals({this.name});

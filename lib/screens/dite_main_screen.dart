@@ -6,9 +6,13 @@ import '../constants.dart';
 import '../homescreen.dart';
 
 // ignore: camel_case_types
+// ignore: must_be_immutable
 class DiteScreen extends StatelessWidget {
+  // ignore: non_constant_identifier_names
   String Breakfast = "Breakfast";
+  // ignore: non_constant_identifier_names
   String Lunch = "Lunch";
+  // ignore: non_constant_identifier_names
   String Dinner = "Dinner";
 
   @override
@@ -52,7 +56,8 @@ class DiteScreen extends StatelessWidget {
                 width: 380,
                 child: Card(
                   shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(30.0)),
+                    borderRadius: BorderRadius.circular(30.0),
+                  ),
                   child: Padding(
                     padding: const EdgeInsets.only(
                       left: 10,
@@ -73,14 +78,17 @@ class DiteScreen extends StatelessWidget {
                           },
                           child: ListTile(
                             leading: Container(
-                                width: 60,
-                                height: 100,
-                                decoration: new BoxDecoration(
-                                    shape: BoxShape.circle,
-                                    image: new DecorationImage(
-                                        fit: BoxFit.fill,
-                                        image: NetworkImage(
-                                            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSE0KYT0fgQFHwA6gWgZC9uGdC6HW1zvwWblA&usqp=CAU")))),
+                              width: 60,
+                              height: 100,
+                              decoration: new BoxDecoration(
+                                shape: BoxShape.circle,
+                                image: new DecorationImage(
+                                  fit: BoxFit.fill,
+                                  image: NetworkImage(
+                                      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSE0KYT0fgQFHwA6gWgZC9uGdC6HW1zvwWblA&usqp=CAU"),
+                                ),
+                              ),
+                            ),
                             title: Text(
                               Breakfast,
                               style: TextStyle(
@@ -106,14 +114,17 @@ class DiteScreen extends StatelessWidget {
                           },
                           child: ListTile(
                             leading: Container(
-                                width: 60,
-                                height: 100,
-                                decoration: new BoxDecoration(
-                                    shape: BoxShape.circle,
-                                    image: new DecorationImage(
-                                        fit: BoxFit.fill,
-                                        image: NetworkImage(
-                                            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSE0KYT0fgQFHwA6gWgZC9uGdC6HW1zvwWblA&usqp=CAU")))),
+                              width: 60,
+                              height: 100,
+                              decoration: new BoxDecoration(
+                                shape: BoxShape.circle,
+                                image: new DecorationImage(
+                                  fit: BoxFit.fill,
+                                  image: NetworkImage(
+                                      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSE0KYT0fgQFHwA6gWgZC9uGdC6HW1zvwWblA&usqp=CAU"),
+                                ),
+                              ),
+                            ),
                             title: Text(
                               Lunch,
                               style: TextStyle(
@@ -139,14 +150,17 @@ class DiteScreen extends StatelessWidget {
                           },
                           child: ListTile(
                             leading: Container(
-                                width: 60,
-                                height: 100,
-                                decoration: new BoxDecoration(
-                                    shape: BoxShape.circle,
-                                    image: new DecorationImage(
-                                        fit: BoxFit.fill,
-                                        image: NetworkImage(
-                                            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSE0KYT0fgQFHwA6gWgZC9uGdC6HW1zvwWblA&usqp=CAU")))),
+                              width: 60,
+                              height: 100,
+                              decoration: new BoxDecoration(
+                                shape: BoxShape.circle,
+                                image: new DecorationImage(
+                                  fit: BoxFit.fill,
+                                  image: NetworkImage(
+                                      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSE0KYT0fgQFHwA6gWgZC9uGdC6HW1zvwWblA&usqp=CAU"),
+                                ),
+                              ),
+                            ),
                             title: Text(
                               Dinner,
                               style: TextStyle(
