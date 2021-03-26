@@ -2,6 +2,7 @@ import 'package:fitflex/constants.dart';
 import 'package:fitflex/models/LevelContainerColors.dart';
 import 'package:fitflex/models/SizeConfig.dart';
 import 'package:flutter/material.dart';
+import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 
 class FitneesLevelChart extends StatefulWidget {
   @override
@@ -9,8 +10,23 @@ class FitneesLevelChart extends StatefulWidget {
 }
 
 class _FitneesLevelChartState extends State<FitneesLevelChart> {
-  LevelContainerColor _container = new LevelContainerColor(" ", ktextcolor,
-      ktextcolor, ktextcolor, ktextcolor, ktextcolor, ktextcolor);
+  LevelContainerColor _container = new LevelContainerColor(
+      " ",
+      ktextcolor,
+      ktextcolor,
+      ktextcolor,
+      ktextcolor,
+      ktextcolor,
+      ktextcolor,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false);
+  double _radius = 3;
+  Color bordercolor = Color(0xFF757575);
+
   @override
   Widget build(BuildContext context) {
     SizeConfig().init(context);
@@ -31,13 +47,23 @@ class _FitneesLevelChartState extends State<FitneesLevelChart> {
                       ktextcolor,
                       ktextcolor,
                       ktextcolor,
-                      ktextcolor);
+                      ktextcolor,
+                      true,
+                      false,
+                      false,
+                      false,
+                      false,
+                      false);
                 });
               },
               child: Container(
+                decoration: BoxDecoration(
+                  border: Border.all(color: bordercolor),
+                  color: _container.container1,
+                  borderRadius: new BorderRadius.circular(_radius),
+                ),
                 width: SizeConfig.safeBlockHorizontal * 10,
                 height: SizeConfig.safeBlockVertical * 5,
-                color: _container.container1,
               ),
             ),
             Padding(
@@ -53,13 +79,23 @@ class _FitneesLevelChartState extends State<FitneesLevelChart> {
                       ktextcolor,
                       ktextcolor,
                       ktextcolor,
-                      ktextcolor);
+                      ktextcolor,
+                      false,
+                      true,
+                      false,
+                      false,
+                      false,
+                      false);
                 });
               },
               child: Container(
+                decoration: BoxDecoration(
+                  border: Border.all(color: bordercolor),
+                  color: _container.container2,
+                  borderRadius: new BorderRadius.circular(_radius),
+                ),
                 width: SizeConfig.safeBlockHorizontal * 10,
                 height: SizeConfig.safeBlockVertical * 8,
-                color: _container.container2,
               ),
             ),
             Padding(
@@ -75,13 +111,23 @@ class _FitneesLevelChartState extends State<FitneesLevelChart> {
                       darkselver,
                       ktextcolor,
                       ktextcolor,
-                      ktextcolor);
+                      ktextcolor,
+                      false,
+                      false,
+                      true,
+                      false,
+                      false,
+                      false);
                 });
               },
               child: Container(
+                decoration: BoxDecoration(
+                  border: Border.all(color: bordercolor),
+                  color: _container.container3,
+                  borderRadius: new BorderRadius.circular(_radius),
+                ),
                 width: SizeConfig.safeBlockHorizontal * 10,
                 height: SizeConfig.safeBlockVertical * 11,
-                color: _container.container3,
               ),
             ),
             Padding(
@@ -97,13 +143,23 @@ class _FitneesLevelChartState extends State<FitneesLevelChart> {
                       darkselver,
                       darkselver,
                       ktextcolor,
-                      ktextcolor);
+                      ktextcolor,
+                      false,
+                      false,
+                      false,
+                      true,
+                      false,
+                      false);
                 });
               },
               child: Container(
+                decoration: BoxDecoration(
+                  border: Border.all(color: bordercolor),
+                  color: _container.container4,
+                  borderRadius: new BorderRadius.circular(_radius),
+                ),
                 width: SizeConfig.safeBlockHorizontal * 10,
                 height: SizeConfig.safeBlockVertical * 14,
-                color: _container.container4,
               ),
             ),
             Padding(
@@ -119,13 +175,23 @@ class _FitneesLevelChartState extends State<FitneesLevelChart> {
                       darkselver,
                       darkselver,
                       darkselver,
-                      ktextcolor);
+                      ktextcolor,
+                      false,
+                      false,
+                      false,
+                      false,
+                      true,
+                      false);
                 });
               },
               child: Container(
+                decoration: BoxDecoration(
+                  border: Border.all(color: bordercolor),
+                  color: _container.container5,
+                  borderRadius: new BorderRadius.circular(_radius),
+                ),
                 width: SizeConfig.safeBlockHorizontal * 10,
                 height: SizeConfig.safeBlockVertical * 17,
-                color: _container.container5,
               ),
             ),
             Padding(
@@ -141,13 +207,85 @@ class _FitneesLevelChartState extends State<FitneesLevelChart> {
                       darkselver,
                       darkselver,
                       darkselver,
-                      darkselver);
+                      darkselver,
+                      false,
+                      false,
+                      false,
+                      false,
+                      false,
+                      true);
                 });
               },
               child: Container(
+                decoration: BoxDecoration(
+                  border: Border.all(color: bordercolor),
+                  color: _container.container6,
+                  borderRadius: new BorderRadius.circular(_radius),
+                ),
                 width: SizeConfig.safeBlockHorizontal * 10,
                 height: SizeConfig.safeBlockVertical * 20,
-                color: _container.container6,
+              ),
+            ),
+          ],
+        ),
+        Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Container(
+                width: SizeConfig.safeBlockHorizontal * 10,
+                height: SizeConfig.safeBlockVertical * 5,
+                child:
+                    Visibility(visible: _container.v1, child: check_circle())),
+            Padding(
+                padding:
+                    EdgeInsets.only(right: SizeConfig.safeBlockHorizontal * 2)),
+            Container(
+                width: SizeConfig.safeBlockHorizontal * 10,
+                height: SizeConfig.safeBlockVertical * 5,
+                child:
+                    Visibility(visible: _container.v2, child: check_circle())),
+            Padding(
+                padding:
+                    EdgeInsets.only(right: SizeConfig.safeBlockHorizontal * 2)),
+            Container(
+              width: SizeConfig.safeBlockHorizontal * 10,
+              height: SizeConfig.safeBlockVertical * 5,
+              child: Visibility(
+                child: check_circle(),
+                visible: _container.v3,
+              ),
+            ),
+            Padding(
+                padding:
+                    EdgeInsets.only(right: SizeConfig.safeBlockHorizontal * 2)),
+            Container(
+              width: SizeConfig.safeBlockHorizontal * 10,
+              height: SizeConfig.safeBlockVertical * 5,
+              child: Visibility(
+                child: check_circle(),
+                visible: _container.v4,
+              ),
+            ),
+            Padding(
+                padding:
+                    EdgeInsets.only(right: SizeConfig.safeBlockHorizontal * 2)),
+            Container(
+              width: SizeConfig.safeBlockHorizontal * 10,
+              height: SizeConfig.safeBlockVertical * 5,
+              child: Visibility(
+                child: check_circle(),
+                visible: _container.v5,
+              ),
+            ),
+            Padding(
+                padding:
+                    EdgeInsets.only(right: SizeConfig.safeBlockHorizontal * 2)),
+            Container(
+              width: SizeConfig.safeBlockHorizontal * 10,
+              height: SizeConfig.safeBlockVertical * 5,
+              child: Visibility(
+                child: check_circle(),
+                visible: _container.v6,
               ),
             )
           ],
@@ -165,6 +303,14 @@ class _FitneesLevelChartState extends State<FitneesLevelChart> {
                   fontSize: 17,
                 ))),
       ],
+    );
+  }
+
+  Widget check_circle() {
+    return Icon(
+      MdiIcons.checkCircle,
+      color: Color(0xFF58D988),
+      size: 29,
     );
   }
 }

@@ -11,7 +11,6 @@ import 'package:flutter/rendering.dart';
 import '../../constants.dart';
 import '../signup.dart';
 
-// ignore: must_be_immutable
 class PageIndecator extends StatefulWidget {
   int _selectedpage;
   PageIndecator(this._selectedpage);
@@ -44,8 +43,11 @@ class _PageIndecatorState extends State<PageIndecator> {
               Row(
                 children: [
                   backbutton(),
-                  SizedBox(width: SizeConfig.safeBlockVertical * 12),
-                  indecator(_selectedpage),
+                  SizedBox(width: SizeConfig.safeBlockVertical * 11),
+                  Positioned(
+                      left: SizeConfig.safeBlockHorizontal * 50,
+                      right: SizeConfig.safeBlockHorizontal * 50,
+                      child: indecator(_selectedpage)),
                 ],
               ),
               SizedBox(height: 25, width: SizeConfig.safeBlockVertical * 100),
@@ -55,7 +57,6 @@ class _PageIndecatorState extends State<PageIndecator> {
             ])));
   }
 
-  // ignore: non_constant_identifier_names
   Widget next_button() {
     if (_selectedpage != 0) {
       setState(() {

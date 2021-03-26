@@ -10,7 +10,10 @@ const double width = 342;
 const double height = 54;
 
 const headertextstyle = TextStyle(
-    color: Color(0xFF393939), fontSize: 20, fontWeight: FontWeight.bold);
+    color: Color(0xFF393939),
+    fontSize: 20,
+    fontWeight: FontWeight.bold,
+    fontFamily: 'Amiri');
 const normaltext = TextStyle(
   color: Color(0xFF5E6EA4),
   fontSize: 15,
