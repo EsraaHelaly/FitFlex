@@ -1,4 +1,3 @@
-import 'package:fitflex/screens/homescreen.dart';
 import 'package:fitflex/Splash_screen/splashscreen1.dart';
 import 'package:flutter/material.dart';
 
