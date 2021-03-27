@@ -14,7 +14,7 @@ class SplashScreen extends StatelessWidget {
         home: SplashScreen2(),
         duration: 3000,
         imageSize: 100,
-        imageSrc: "images/yoga.png",
+        imageSrc: "images/logo.png",
         text: "FITFLEX",
         textType: TextType.ScaleAnimatedText,
         textStyle: TextStyle(
