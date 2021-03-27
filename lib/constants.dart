@@ -23,3 +23,8 @@ const textfitflex = Text(
   style: TextStyle(
       color: Color(0xff2F4054), fontSize: 40, fontWeight: FontWeight.bold),
 );
+const profiletxtstyle = TextStyle(
+    color: Color(0xff2F4054), fontSize: 14, fontWeight: FontWeight.bold);
+const backgroundpic = BoxDecoration(
+    image: DecorationImage(
+        image: AssetImage('images/login.jpeg'), fit: BoxFit.fill));

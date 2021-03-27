@@ -1,5 +1,5 @@
-import 'package:fitflex/componants/indecator.dart';
-import 'package:fitflex/homescreen.dart';
+import 'package:fitflex/register_screens/info_signup/components/indecator.dart';
+import 'package:fitflex/screens/homescreen.dart';
 import 'package:fitflex/models/SizeConfig.dart';
 import 'package:fitflex/register_screens/info_signup/PageOne.dart';
 import 'package:fitflex/register_screens/info_signup/PageThree.dart';
@@ -43,17 +43,18 @@ class _PageIndecatorState extends State<PageIndecator> {
               Row(
                 children: [
                   backbutton(),
-                  SizedBox(width: SizeConfig.safeBlockVertical * 11),
-                  Positioned(
-                      left: SizeConfig.safeBlockHorizontal * 50,
-                      right: SizeConfig.safeBlockHorizontal * 50,
-                      child: indecator(_selectedpage)),
+                  Expanded(child: Center(child: indecator(_selectedpage))),
+                  Padding(padding: EdgeInsets.only(right: 44))
                 ],
               ),
               SizedBox(height: 25, width: SizeConfig.safeBlockVertical * 100),
               pages[_selectedpage],
               SizedBox(height: 50, width: SizeConfig.safeBlockVertical * 100),
-              next_button()
+              Expanded(
+                  child: Align(
+                child: next_button(),
+                alignment: Alignment.bottomCenter,
+              ))
             ])));
   }
 

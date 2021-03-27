@@ -2,7 +2,7 @@ import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:fitflex/constants.dart';
 import 'package:flutter/material.dart';
 import 'package:fitflex/screens/courses_screen.dart';
-import 'package:fitflex/screens/dite_main_screen.dart';
+import 'package:fitflex/Diet_screens/dite_main_screen.dart';
 import 'package:fitflex/screens/favorites_screen.dart';
 import 'package:fitflex/screens/profile_screen.dart';
 
@@ -55,4 +55,3 @@ class _HomeScreenState extends State<HomeScreen> {
     );
   }
 }
-

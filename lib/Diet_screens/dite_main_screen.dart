@@ -1,9 +1,9 @@
-import 'package:fitflex/screens/meals.dart';
+import 'package:fitflex/Diet_screens/meals.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
 import '../constants.dart';
-import '../homescreen.dart';
+import '../screens/homescreen.dart';
 
 // ignore: camel_case_types
 // ignore: must_be_immutable

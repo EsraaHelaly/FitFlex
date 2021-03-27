@@ -37,54 +37,41 @@ class _PageOneState extends State<PageOne> {
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            Column(children: [
-              InkWell(
-                onTap: () {
-                  Navigator.pushReplacement(context,
-                      MaterialPageRoute(builder: (context) {
-                    return PageIndecator(1);
-                  }));
-                },
-                child: Container(
-                  width: 116,
-                  height: 116,
-                  decoration: gendercircle,
-                  child: Icon(
-                    MdiIcons.genderMale,
-                    color: Color(0xFFB6BDC2),
-                    size: 70,
-                  ),
+            gendericon(
+                Icon(
+                  MdiIcons.genderMale,
+                  color: Color(0xFFB6BDC2),
+                  size: 70,
                 ),
-              ),
-              Padding(padding: EdgeInsets.only(top: 11)),
-              Text("Male", style: normaltext)
-            ]),
+                "Male"),
             Padding(padding: EdgeInsets.only(right: 19)),
-            Column(children: [
-              InkWell(
-                onTap: () {
-                  Navigator.pushReplacement(context,
-                      MaterialPageRoute(builder: (context) {
-                    return PageIndecator(1);
-                  }));
-                },
-                child: Container(
-                  width: 116,
-                  height: 116,
-                  decoration: gendercircle,
-                  child: Icon(
-                    MdiIcons.genderFemale,
-                    color: Color(0xFFB6BDC2),
-                    size: 70,
-                  ),
+            gendericon(
+                Icon(
+                  MdiIcons.genderFemale,
+                  color: Color(0xFFB6BDC2),
+                  size: 70,
                 ),
-              ),
-              Padding(padding: EdgeInsets.only(top: 11)),
-              Text("Female", style: normaltext),
-            ]),
+                "Female"),
           ],
         )
       ],
     );
+  }
+
+  Widget gendericon(Icon icon, String gender) {
+    return Column(children: [
+      InkWell(
+        onTap: () {
+          Navigator.pushReplacement(context,
+              MaterialPageRoute(builder: (context) {
+            return PageIndecator(1);
+          }));
+        },
+        child: Container(
+            width: 116, height: 116, decoration: gendercircle, child: icon),
+      ),
+      Padding(padding: EdgeInsets.only(top: 11)),
+      Text(gender, style: normaltext)
+    ]);
   }
 }

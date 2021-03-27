@@ -1,5 +1,5 @@
 import 'package:fitflex/models/SizeConfig.dart';
-import 'package:fitflex/screens/fitnees_level_chart.dart';
+import 'package:fitflex/register_screens/info_signup/components/fitnees_level_chart.dart';
 import 'package:flutter/material.dart';
 import '../../constants.dart';
 

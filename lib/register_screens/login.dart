@@ -6,7 +6,7 @@ import 'package:fitflex/constants.dart';
 import 'package:fitflex/register_screens/signup.dart';
 import 'package:flutter/material.dart';
 
-import '../homescreen.dart';
+import '../screens/homescreen.dart';
 
 class LoginPage extends StatefulWidget {
   LoginPage({Key key}) : super(key: key);

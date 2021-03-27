@@ -1,4 +1,5 @@
-import 'package:fitflex/screens/splashscreen1.dart';
+import 'package:fitflex/screens/homescreen.dart';
+import 'package:fitflex/Splash_screen/splashscreen1.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -14,7 +15,7 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
       // theme: ThemeData(canvasColor: new Color(0xffE8E7DB)),
-      home: MyHomePage(),
+      home: SplashScreen(),
     );
   }
 }

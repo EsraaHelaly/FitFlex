@@ -1,5 +1,5 @@
 import 'package:fitflex/constants.dart';
-import 'package:fitflex/screens/splashscreen2.dart';
+import 'package:fitflex/Splash_screen/splashscreen2.dart';
 import 'package:flutter/material.dart';
 import 'package:splash_screen_view/SplashScreenView.dart';
 

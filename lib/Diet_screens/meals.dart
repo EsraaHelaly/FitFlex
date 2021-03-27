@@ -1,7 +1,6 @@
-import 'package:fitflex/screens/detalis_meals.dart';
+import 'package:fitflex/Diet_screens/detalis_meals.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-
 
 // ignore: camel_case_types
 // ignore: must_be_immutable
