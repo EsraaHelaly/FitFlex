@@ -22,7 +22,7 @@ class RoundedInputField extends StatelessWidget {
 
       case "enter your email" : return "enter your email";
       case "enter your user name" : return "enter your user name";
-      case "enter your password" : return "enter your password";
+      case "Enter Your Password" : return "Enter Your Password";
 
     }
   }
@@ -36,7 +36,7 @@ class RoundedInputField extends StatelessWidget {
             return _errorMessage();
           }
         },
-        obscureText: hint=='enter your password' ?true :false,
+        obscureText: hint=='Enter Your Password' ?true :false,
         onChanged: onchanged,
         controller: controller,
         decoration: InputDecoration(

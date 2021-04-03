@@ -109,20 +109,14 @@ class _SignUpPageState extends State<SignUpPage> {
                       padding: EdgeInsets.only(left: 30),
                       child: RoundedInputField(
                         controller: passwordController,
-                        hint: 'enter your password',
+                        hint: 'Enter Your Password',
                         icon: Icons.lock,
                         onchanged: (value) {},
                       ),
                     ),
                     SizedBox(height: 25),
-                    Padding(
-                      padding: EdgeInsets.only(left: 30),
-                      child: RoundedPasswordField(
-                        hinttxt: 'confirm your password',
-                        onchanged: (value) {},
-                      ),
-                    ),
-                    SizedBox(height: 80),
+
+                    SizedBox(height: 50),
                     Padding(
                       padding: EdgeInsets.only(left: 30),
                       child: RoundedButton(

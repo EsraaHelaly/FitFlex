@@ -2,6 +2,7 @@
 import 'dart:convert';
 
 import 'package:fitflex/service/model/login_model.dart';
+import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'package:shared_preferences/shared_preferences.dart';
 
@@ -53,17 +54,27 @@ class API_Service {
       "password": password,
     };
     var response = await http.post(authApi, body: body);
+
     if (response.statusCode == 200) {
       try {
+
         var jsonData = jsonDecode(response.body);
+        if(jsonData["msg"]=="user register sucssfully"){
+          return true;
+        }
 
 
-        return true;
+
       } catch (Exception) {
         return false;
+
       }
     } else {
       print(response.body);
+
+
+
+
     }
     return false;
   }
