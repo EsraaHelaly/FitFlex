@@ -28,16 +28,14 @@ class _SplashScreen2State extends State<SplashScreen2> {
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Hero(
-                    tag: 'hero',
-                    child: Text(
+                 Text(
                       'FITFLEX',
                       style: TextStyle(
                           color: new Color(0xff2F4054),
                           fontSize: 40,
                           fontWeight: FontWeight.bold),
                     ),
-                  ),
+                
                   SizedBox(height: 80),
                   Image.asset("images/yoga.png",
                       fit: BoxFit.cover, height: 265),

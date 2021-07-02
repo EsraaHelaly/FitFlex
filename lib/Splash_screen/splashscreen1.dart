@@ -8,14 +8,13 @@ class SplashScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Hero(
-      tag: 'hero',
-      child: SplashScreenView(
+    return 
+       SplashScreenView(
         home: SplashScreen2(),
         duration: 3000,
         imageSize: 100,
         imageSrc: "images/logo.png",
-        text: "FITFLEX",
+        
         textType: TextType.ScaleAnimatedText,
         textStyle: TextStyle(
           color: ktextcolor,
@@ -23,7 +22,7 @@ class SplashScreen extends StatelessWidget {
           fontWeight: FontWeight.bold,
         ),
         backgroundColor: new Color(0xffE8E7DB),
-      ),
+   
     );
   }
 }
