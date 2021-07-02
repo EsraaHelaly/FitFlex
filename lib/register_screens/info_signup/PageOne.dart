@@ -1,4 +1,5 @@
 import 'package:fitflex/register_screens/info_signup/PageIndecator.dart';
+import 'package:fitflex/service/model/model_data.dart';
 import 'package:flutter/material.dart';
 import 'package:fitflex/models/SizeConfig.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
@@ -6,11 +7,19 @@ import 'package:material_design_icons_flutter/material_design_icons_flutter.dart
 import '../../constants.dart';
 
 class PageOne extends StatefulWidget {
+  Data_user data_user;
+  PageOne({this.data_user});
+
+
   @override
   _PageOneState createState() => _PageOneState();
 }
 
 class _PageOneState extends State<PageOne> {
+
+  String female="Female";
+  String male="male";
+
   Decoration gendercircle =
       BoxDecoration(color: Color(0xFF5767A3), shape: BoxShape.circle);
   @override
@@ -43,7 +52,7 @@ class _PageOneState extends State<PageOne> {
                   color: Color(0xFFB6BDC2),
                   size: 70,
                 ),
-                "Male"),
+                "$male"),
             Padding(padding: EdgeInsets.only(right: 19)),
             gendericon(
                 Icon(
@@ -51,7 +60,7 @@ class _PageOneState extends State<PageOne> {
                   color: Color(0xFFB6BDC2),
                   size: 70,
                 ),
-                "Female"),
+                "$female"),
           ],
         )
       ],
@@ -62,10 +71,24 @@ class _PageOneState extends State<PageOne> {
     return Column(children: [
       InkWell(
         onTap: () {
-          Navigator.pushReplacement(context,
-              MaterialPageRoute(builder: (context) {
-            return PageIndecator(1);
-          }));
+          if(gender=="$male"){
+            widget.data_user.gender=male;
+
+
+            Navigator.pushReplacement(context,
+                MaterialPageRoute(builder: (context) {
+
+                  return PageIndecator(1 ,data_user: widget.data_user);
+                }));
+
+          } else if(gender=="$female"){
+            widget.data_user.gender=female;
+            Navigator.pushReplacement(context,
+                MaterialPageRoute(builder: (context) {
+                  return PageIndecator(1,data_user: widget.data_user);
+                }));
+          }
+
         },
         child: Container(
             width: 116, height: 116, decoration: gendercircle, child: icon),
